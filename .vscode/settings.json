@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "search.exclude": {
+    "node_modules/": true,
+    "build/": true,
+    "*.log": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
