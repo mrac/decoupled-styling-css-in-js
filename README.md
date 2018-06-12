@@ -37,6 +37,7 @@ Nice to have:
 
 - Install dependencies: `npm install`
 - Run dev server: `npm start`
+- Go to: http://localhost:3000
 
 ### Solution
 
