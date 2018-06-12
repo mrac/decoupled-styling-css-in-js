@@ -47,7 +47,7 @@ Nice to have:
 - [Styling injected into parameter](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L5)
 - [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L17)
 
-##### Higher-level - example of `App` component
+#### Higher-level - example of `App` component
 
 - [`MyButton` component used](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L29)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
