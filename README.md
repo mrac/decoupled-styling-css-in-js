@@ -29,6 +29,7 @@ Additional requirements (no steps backwards):
 
 1.  UI components styles are isolated (no name-conflicts, no chance to break)
 2.  No implicit dependencies to styles
+3.  UI components should be decoupled from each other, as far as possible
 
 ### Setup
 
