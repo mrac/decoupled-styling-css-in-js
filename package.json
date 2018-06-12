@@ -1,6 +1,6 @@
 {
-  "name": "decoupled-styling",
-  "version": "0.1.0",
+  "name": "decoupled-styling-css-in-js",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",

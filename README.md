@@ -1,6 +1,6 @@
 # Decoupled styling
 
-## Solution 1 - React + TypeScript + Emotion
+## Solution - React + TypeScript + Emotion
 
 ### Stack
 
