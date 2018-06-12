@@ -58,7 +58,7 @@ To simplify examples, global CSS-classes are used.
 4.  UI-Component with custom styling (pass an object containing CSS-classes):
 
 ```tsx
-<MyButton classes={rootPosition: 'center', content: 'fixed-width'} />
+<MyButton classes={rootPosition: "center", content: "fixed-width"} />
 ```
 
 > It's up to the component itself to expose its styling-API.
@@ -66,7 +66,7 @@ To simplify examples, global CSS-classes are used.
 5.  Higher-level component (nested objects containing CSS-classes to overwrite children styles):
 
 ```tsx
-<App classes={title: 'big', button: {rootPosition: 'left'}} />
+<App classes={title: "big", button: {rootPosition: "left"}} />
 ```
 
 ### Demo
