@@ -43,7 +43,7 @@ Additional requirements (no steps backwards):
 
 - [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button-style.ts#L3)
 - [Styling injected into parameter](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L5)
-- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L17)
+- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L16)
 
 #### Higher-level - example of `App` component
 

@@ -3,7 +3,6 @@ import { MyButtonClasses, defaultClasses } from './my-button-style';
 
 interface MyButtonProps {
   classes?: MyButtonClasses;
-  positionClass?: string;
   disabled?: boolean;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   children?: any;
