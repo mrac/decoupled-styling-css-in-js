@@ -11,6 +11,8 @@ export interface AppProps {
 export class App extends React.Component<AppProps> {
   public render() {
     const classes = this.props.classes || {};
+    // tslint:disable-next-line:no-console
+    console.log('classes.links: ', classes.links);
 
     return (
       <div className={`${classes.root || defaultClasses.root}`}>

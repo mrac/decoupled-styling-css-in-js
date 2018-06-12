@@ -20,18 +20,15 @@ Requirements:
 
 1.  UI component is decoupled from its styling. Styling is injected into the component via its API.
 2.  UI component has its default, minimal styling, in case no styling is injected.
-3.  Default styling may be overwritten by custom styling.
-4.  Styling can be set for the UI-component and its children (and grand-children etc.)
-5.  It's possible to customise the styling for the whole application in one run (styling theme).
+3.  Default styling may be overwritten by custom styling via styling-API.
+4.  Default styling absent from the styling-API, can be also overwritten (although "unsafely", with regards to [SemVer](https://semver.org/)).
+5.  Styling can be set for the UI-component and its children (and grand-children etc.)
+6.  It's possible to customise the styling for the whole application in one run (styling theme).
 
-Additional requirements:
+Additional requirements (no steps backwards):
 
-1.  UI componests styles are isolated (no name-conflicts, no chance to break)
+1.  UI components styles are isolated (no name-conflicts, no chance to break)
 2.  No implicit dependencies to styles
-
-Nice to have:
-
-1.  Styling API is defined (like: root styling, children styling, position, look, layout etc.)
 
 ### Setup
 
