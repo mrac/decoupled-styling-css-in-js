@@ -61,9 +61,9 @@ To simplify examples, global CSS-classes are used.
 <MyButton classes={rootPosition: 'center', content: 'fixed-width'} />
 ```
 
-It's up to the component itself to expose its proper styling-API.
+> It's up to the component itself to expose its styling-API.
 
-5.  Higher-level component (nested objects containing CSS-classes):
+5.  Higher-level component (nested objects containing CSS-classes to overwrite children styles):
 
 ```tsx
 <App classes={title: 'big', button: {rootPosition: 'left'}} />
