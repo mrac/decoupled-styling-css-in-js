@@ -46,7 +46,7 @@ Additional requirements (no steps backwards):
 
 #### Higher-level - example of `App` component
 
-- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L34)
+- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L32)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
 
 #### Application-level - themes
