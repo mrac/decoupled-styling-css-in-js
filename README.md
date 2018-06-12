@@ -40,7 +40,7 @@ To simplify examples, global CSS-classes are used.
 1.  Native element with default styling:
 
 ```tsx
-<Button />
+<textarea />
 ```
 
 2.  UI-Component with default styling:
@@ -52,7 +52,7 @@ To simplify examples, global CSS-classes are used.
 3.  Native element with custom styling (pass a CSS-class):
 
 ```tsx
-<Button className="center" />
+<textarea className="center" />
 ```
 
 4.  UI-Component with custom styling (pass an object containing CSS-classes):
