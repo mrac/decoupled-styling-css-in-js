@@ -31,21 +31,57 @@ Additional requirements (no steps backwards):
 2.  No implicit dependencies to styles
 3.  UI components should be decoupled from each other, as far as possible
 
-### Setup
+### Solution
+
+#### Examples of usage:
+
+To simplify examples, global CSS-classes are used.
+
+1.  Native element with default styling:
+
+```tsx
+<Button />
+```
+
+2.  UI-Component with default styling:
+
+```tsx
+<MyButton />
+```
+
+3.  Native element with custom styling (pass a CSS-class):
+
+```tsx
+<Button className="center" />
+```
+
+4.  UI-Component with custom styling (pass an object containing CSS-classes):
+
+```tsx
+<MyButton classes={rootPosition: 'center', content: 'fixed-width'} />
+```
+
+It's up to the component itself to expose its proper styling-API.
+
+5.  Higher-level component (nested objects containing CSS-classes):
+
+```tsx
+<App classes={title: 'big', button: {rootPosition: 'left'}} />
+```
+
+### Demo
 
 - Install dependencies: `npm install`
 - Run dev server: `npm start`
 - Go to: http://localhost:3000
 
-### Solution
-
-#### Example of `MyButton` component
+#### `MyButton` component
 
 - [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button-style.ts#L3)
 - [Styling injected into parameter](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L5)
 - [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L16)
 
-#### Higher-level - example of `App` component
+#### Higher-level - `App` component
 
 - [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L32)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
@@ -56,3 +92,8 @@ Additional requirements (no steps backwards):
 - [Reset to component's default setting (ignore any mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L24)
 - [Any level of customisation is possible, it's just CSS](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-b.ts#L17)
 - [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L23)
+
+### Customisation
+
+- Overwriting component's default styles is done "per class" (instead of "per CSS-property" like natively in CSS). In case there is need to alter just one CSS-property, all default CSS content of the class should be copied-and-pasted except one CSS-property which will be modified.
+- native CSS overwriting solution by [CSS Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) is not used. CSS-classes are not combined, but simply replaced if customised.
