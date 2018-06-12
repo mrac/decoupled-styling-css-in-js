@@ -9,6 +9,7 @@ export interface AppClasses {
   intro?: string;
   button?: MyButtonClasses;
   animation?: string;
+  links?: string;
 }
 
 export const defaultClasses: AppClasses = {};
@@ -35,6 +36,20 @@ defaultClasses.title = css`
 
 defaultClasses.intro = css`
   font-size: large;
+`;
+
+defaultClasses.links = css`
+  a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      color: cyan;
+    }
+  }
 `;
 
 defaultClasses.button = {

@@ -24,6 +24,9 @@ export class App extends React.Component<AppProps> {
             alt="logo"
           />
           <h1 className={classes.title || defaultClasses.title}>Welcome to React</h1>
+          <div className={classes.links || defaultClasses.links}>
+            <a href="/?theme=a">theme A</a> | <a href="/?theme=b">theme B</a>
+          </div>
         </header>
         <p className={classes.intro || defaultClasses.intro}>
           <MyButton classes={classes.button || defaultClasses.button} />
