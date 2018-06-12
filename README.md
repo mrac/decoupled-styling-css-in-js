@@ -49,12 +49,12 @@ Nice to have:
 
 #### Higher-level - example of `App` component
 
-- [`MyButton` component used](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L29)
+- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L32)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
 
 #### Application-level - themes
 
 - [Theme A](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-a.ts)
 - [Theme B](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts)
-- [Reset to component's default setting (disregard the mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L5)
+- [Reset to component's default setting (disregard the mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L8)
 - [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L7)

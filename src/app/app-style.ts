@@ -25,7 +25,6 @@ defaultClasses.logo = (animation?: string) => css`
 
 defaultClasses.header = css`
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 `;
