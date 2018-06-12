@@ -46,12 +46,11 @@ Additional requirements (no steps backwards):
 
 #### Higher-level - example of `App` component
 
-- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L32)
+- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L34)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
 
 #### Application-level - themes
 
-- [Theme A](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-a.ts)
-- [Theme B](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts)
-- [Reset to component's default setting (disregard the mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L8)
-- [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L7)
+- Themes based on `App` component default styling - [Theme A](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-a.ts), [Theme B](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts)
+- [Reset to component's default setting (disregard the mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L24)
+- [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L23)
