@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from './app/app';
-import registerServiceWorker from './registerServiceWorker';
 import themeA from './themes/theme-a';
 import themeB from './themes/theme-b';
 import { AppClasses } from 'src/app/app-style';
@@ -21,4 +20,3 @@ switch (search) {
 }
 
 ReactDOM.render(<App classes={theme} />, document.getElementById('root') as HTMLElement);
-registerServiceWorker();
