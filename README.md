@@ -14,7 +14,7 @@ The solution will most probably work with other [CSS in JS](https://github.com/M
 
 Mission statement:
 
-> For UI-components to support the similar level of decoupling which is present in native HTML/CSS (HTML element is decoupled from its styling by exposing an API to inject styling via `class` attribute or `className` property).
+> Decoupling from styling for UI-components should be on similar level as in native HTML/CSS (HTML element is decoupled from its styling by exposing an API to inject styling via `class` attribute or `className` property).
 
 Requirements:
 
