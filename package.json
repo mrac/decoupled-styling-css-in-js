@@ -93,12 +93,7 @@
       "json",
       "node",
       "mjs"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsConfigFile": "/Users/mraczkowski/Documents/repos/decoupled-styling/tsconfig.test.json"
-      }
-    }
+    ]
   },
   "babel": {
     "presets": [
