@@ -21,7 +21,7 @@ const themeA: AppClasses = {
       color: green;
     }
   `,
-  button: {}
+  okButton: {}
 };
 
 export default themeA;

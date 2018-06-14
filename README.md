@@ -66,7 +66,7 @@ To simplify examples, global CSS-classes are used.
 5.  Higher-level component (nested objects containing CSS-classes to overwrite children styles):
 
 ```tsx
-<App classes={title: "big", button: {rootPosition: "left"}} />
+<App classes={title: "big", okButton: {rootPosition: "left"}} />
 ```
 
 ### Demo

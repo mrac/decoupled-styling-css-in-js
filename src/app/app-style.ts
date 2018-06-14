@@ -7,7 +7,7 @@ export interface AppClasses {
   header?: string;
   title?: string;
   intro?: string;
-  button?: MyButtonClasses;
+  okButton?: MyButtonClasses;
   animation?: string;
   links?: string;
 }
@@ -51,7 +51,7 @@ defaultClasses.links = css`
   }
 `;
 
-defaultClasses.button = {
+defaultClasses.okButton = {
   rootStyle: css`
     background-color: #d0d0ff;
   `,
