@@ -37,20 +37,6 @@ defaultClasses.intro = css`
   font-size: large;
 `;
 
-defaultClasses.links = css`
-  a {
-    color: white;
-
-    &:visited {
-      color: white;
-    }
-
-    &:hover {
-      color: cyan;
-    }
-  }
-`;
-
 defaultClasses.okButton = {
   rootStyle: css`
     background-color: #d0d0ff;
@@ -66,5 +52,19 @@ defaultClasses.animation = keyframes`
   }
   to {
     transform: rotate(360deg);
+  }
+`;
+
+defaultClasses.links = css`
+  a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      color: cyan;
+    }
   }
 `;

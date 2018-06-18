@@ -1,7 +1,8 @@
 import { css } from 'emotion';
 import { AppClasses } from 'src/app/app-style';
 
-const themeA: AppClasses = {
+const themeB: AppClasses = {
+  okButton: {},
   links: css`
     a {
       color: white;
@@ -20,8 +21,7 @@ const themeA: AppClasses = {
     a:last-child {
       color: green;
     }
-  `,
-  okButton: {}
+  `
 };
 
-export default themeA;
+export default themeB;

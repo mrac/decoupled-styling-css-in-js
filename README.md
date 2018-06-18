@@ -77,21 +77,21 @@ To simplify examples, global CSS-classes are used.
 
 #### `MyButton` component
 
-- [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button-style.ts#L3)
-- [Styling injected into parameter](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L5)
-- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling/blob/master/src/my-button/my-button.tsx#L16)
+- [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button-style.ts#L3)
+- [Styling injected into parameter](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L5)
+- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L16)
 
 #### Higher-level - `App` component
 
-- [`MyButton` usage](https://github.com/mrac/decoupled-styling/blob/master/src/app/app.tsx#L32)
-- [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling/blob/master/src/app/app-style.ts#L10)
+- [`MyButton` usage](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/app/app.tsx#L32)
+- [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/app/app-style.ts#L10)
 
 #### Application-level - themes
 
-- Themes based on `App` component default styling - [Theme A](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-a.ts), [Theme B](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts)
-- [Reset to component's default setting (ignore any mid-level component customisations)](https://github.com/mrac/decoupled-styling/blob/master/src/themes/theme-b.ts#L24)
-- [Any level of customisation is possible, it's just CSS](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-b.ts#L17)
-- [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L22)
+- Themes based on `App` component default styling - [Theme A](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-a.ts), [Theme B](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-b.ts)
+- [Reset to component's default setting (ignore any mid-level component customisations)](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-b.ts#L5)
+- [Any level of customisation is possible, it's just CSS](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-b.ts#L18)
+- [Theme used](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/index.tsx#L22)
 
 ### Customisation
 
