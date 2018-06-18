@@ -1,7 +1,15 @@
 import { css, keyframes } from 'emotion';
-import { AppClasses } from 'src/app/app-style';
+import { AppClasses, defaultClasses } from 'src/app/app-style';
 
 const themeA: AppClasses = {
+  logo: (animation?: string) => css`
+    animation: ${animation} infinite 0.7s linear;
+    height: 80px;
+  `,
+  title: css`
+    ${defaultClasses.title};
+    color: #5050ff;
+  `,
   animation: keyframes`
     0% {
       transform: scale(1);
@@ -12,10 +20,6 @@ const themeA: AppClasses = {
     100% {
       transform: scale(1)
     }
-  `,
-  logo: (animation?: string) => css`
-    animation: ${animation} infinite 0.7s linear;
-    height: 80px;
   `
 };
 
