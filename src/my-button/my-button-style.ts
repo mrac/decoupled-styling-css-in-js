@@ -9,17 +9,17 @@ export interface MyButtonClasses {
   content?: string;
 }
 
-export const defaultClasses: MyButtonClasses = {};
+export const myButtonClasses: MyButtonClasses = {};
 
 const borderRadius = 4;
 
-defaultClasses.root = css`
+myButtonClasses.root = css`
   display: inline-flex;
   position: relative;
   box-sizing: border-box;
 `;
 
-defaultClasses.rootStyle = css`
+myButtonClasses.rootStyle = css`
   align-items: center;
   border-radius: ${borderRadius}px;
   font-family: sans-serif;
@@ -31,9 +31,9 @@ defaultClasses.rootStyle = css`
   background-color: #f0f0f0;
 `;
 
-defaultClasses.rootPosition = css``;
+myButtonClasses.rootPosition = css``;
 
-defaultClasses.rootDisabled = css`
+myButtonClasses.rootDisabled = css`
   &:disabled {
     &::after {
       content: ' ';
@@ -50,13 +50,13 @@ defaultClasses.rootDisabled = css`
   }
 `;
 
-defaultClasses.rootFocus = css`
+myButtonClasses.rootFocus = css`
   &:focus {
     outline: none;
   }
 `;
 
-defaultClasses.content = css`
+myButtonClasses.content = css`
   flex: 1 0 auto;
   padding: 8px 15px;
 `;

@@ -3,50 +3,17 @@ import { MyButtonClasses } from 'src/my-button/my-button-style';
 
 export interface AppClasses {
   root?: string;
-  logo?: (animation?: string) => string;
+  logo?: string;
   header?: string;
   title?: string;
   intro?: string;
   okButton?: MyButtonClasses;
-  animation?: string;
   links?: string;
 }
 
-export const defaultClasses: AppClasses = {};
+export const appClasses: AppClasses = {};
 
-defaultClasses.root = css`
-  text-align: center;
-`;
-
-defaultClasses.logo = (animation?: string) => css`
-  animation: ${animation} infinite 20s linear;
-  height: 80px;
-`;
-
-defaultClasses.header = css`
-  background-color: #222;
-  padding: 20px;
-  color: white;
-`;
-
-defaultClasses.title = css`
-  font-size: 1.5em;
-`;
-
-defaultClasses.intro = css`
-  font-size: large;
-`;
-
-defaultClasses.okButton = {
-  rootStyle: css`
-    background-color: #d0d0ff;
-  `,
-  rootPosition: css`
-    margin-left: -50%;
-  `
-};
-
-defaultClasses.animation = keyframes`
+const animation = keyframes`
   from {
     transform: rotate(0deg);
   }
@@ -55,7 +22,39 @@ defaultClasses.animation = keyframes`
   }
 `;
 
-defaultClasses.links = css`
+appClasses.root = css`
+  text-align: center;
+`;
+
+appClasses.logo = css`
+  animation: ${animation} infinite 20s linear;
+  height: 80px;
+`;
+
+appClasses.header = css`
+  background-color: #222;
+  padding: 20px;
+  color: white;
+`;
+
+appClasses.title = css`
+  font-size: 1.5em;
+`;
+
+appClasses.intro = css`
+  font-size: large;
+`;
+
+appClasses.okButton = {
+  rootStyle: css`
+    background-color: #d0d0ff;
+  `,
+  rootPosition: css`
+    margin-left: -50%;
+  `
+};
+
+appClasses.links = css`
   a {
     color: white;
 

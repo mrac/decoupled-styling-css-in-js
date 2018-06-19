@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MyButtonClasses, defaultClasses } from './my-button-style';
+import { MyButtonClasses, myButtonClasses } from './my-button-style';
 
 interface MyButtonProps {
   classes?: MyButtonClasses;
@@ -10,21 +10,21 @@ interface MyButtonProps {
 }
 
 export function MyButton(props: MyButtonProps) {
-  const classes = props.classes || {};
+  const classes = { ...myButtonClasses, ...props.classes };
 
   return (
     <button
       className={`
-        ${classes.root || defaultClasses.root}
-        ${classes.rootStyle || defaultClasses.rootStyle}
-        ${classes.rootFocus || defaultClasses.rootFocus}
-        ${classes.rootDisabled || defaultClasses.rootDisabled}
-        ${classes.rootPosition || defaultClasses.rootPosition}
+        ${classes.root}
+        ${classes.rootStyle}
+        ${classes.rootFocus}
+        ${classes.rootDisabled}
+        ${classes.rootPosition}
       `}
       disabled={props.disabled}
       onClick={props.onClick}
     >
-      <div className={classes.content || defaultClasses.content}>{props.children || 'Click'}</div>
+      <div className={classes.content}>{props.children || 'Click'}</div>
     </button>
   );
 }

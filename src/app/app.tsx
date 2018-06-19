@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import logo from './logo.svg';
-import { AppClasses, defaultClasses } from './app-style';
+import { AppClasses, appClasses } from './app-style';
 import { MyButton } from '../my-button/my-button';
 
 export interface AppProps {
@@ -10,26 +10,19 @@ export interface AppProps {
 
 export class App extends React.Component<AppProps> {
   public render() {
-    const classes = this.props.classes || {};
+    const classes = { ...appClasses, ...this.props.classes };
 
     return (
-      <div className={`${classes.root || defaultClasses.root}`}>
-        <header className={classes.header || defaultClasses.header}>
-          <img
-            className={
-              (classes.logo && classes.logo(classes.animation || defaultClasses.animation)) ||
-              (defaultClasses.logo && defaultClasses.logo(classes.animation || defaultClasses.animation))
-            }
-            src={logo}
-            alt="logo"
-          />
-          <h1 className={classes.title || defaultClasses.title}>Welcome to React</h1>
-          <div className={classes.links || defaultClasses.links}>
+      <div className={classes.root}>
+        <header className={classes.header}>
+          <img className={classes.logo} src={logo} alt="logo" />
+          <h1 className={classes.title}>Welcome to React</h1>
+          <div className={classes.links}>
             <a href="/?theme=a">theme A</a> | <a href="/?theme=b">theme B</a>
           </div>
         </header>
-        <p className={classes.intro || defaultClasses.intro}>
-          <MyButton classes={classes.okButton || defaultClasses.okButton}>OK</MyButton>
+        <p className={classes.intro}>
+          <MyButton classes={classes.okButton}>OK</MyButton>
         </p>
       </div>
     );
