@@ -2,7 +2,7 @@ import { css } from 'emotion';
 import { AppClasses } from 'src/app/app-style';
 
 const themeB: AppClasses = {
-  okButton: {},
+  okButton: null!,
   links: css`
     a {
       color: white;

@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { mergeDeep } from 'src/utils/merge-deep';
+
 import { MyButtonClasses, myButtonClasses } from './my-button-style';
 
 interface MyButtonProps {
@@ -10,7 +12,7 @@ interface MyButtonProps {
 }
 
 export function MyButton(props: MyButtonProps) {
-  const classes = { ...myButtonClasses, ...props.classes };
+  const classes = mergeDeep(myButtonClasses, props.classes);
 
   return (
     <button

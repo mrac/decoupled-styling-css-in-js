@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { mergeDeep } from 'src/utils/merge-deep';
 
 import logo from './logo.svg';
 import { AppClasses, appClasses } from './app-style';
@@ -10,7 +11,7 @@ export interface AppProps {
 
 export class App extends React.Component<AppProps> {
   public render() {
-    const classes = { ...appClasses, ...this.props.classes };
+    const classes = mergeDeep(appClasses, this.props.classes);
 
     return (
       <div className={classes.root}>
