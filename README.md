@@ -78,12 +78,12 @@ To simplify examples, global CSS-classes are used.
 #### `MyButton` component
 
 - [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button-style.ts#L3)
-- [Styling injected into parameter](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L5)
-- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L13)
+- [Styling injected into parameter](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L6)
+- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L15)
 
 #### Higher-level - `App` component
 
-- [`MyButton` usage](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/app/app.tsx#L25)
+- [`MyButton` usage](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/app/app.tsx#L26)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/app/app-style.ts#L10)
 
 #### Application-level - themes
