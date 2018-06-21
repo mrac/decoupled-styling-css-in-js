@@ -79,7 +79,7 @@ To simplify examples, global CSS-classes are used.
 
 - [Styling API - TypeScript interface](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button-style.ts#L3)
 - [Styling injected into parameter](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L7)
-- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L15)
+- [Implemented default styling and injected styling](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/my-button/my-button.tsx#L16)
 
 #### Higher-level - `App` component
 
