@@ -7,9 +7,13 @@ export interface MyButtonClasses {
   rootDisabled?: string;
   rootFocus?: string;
   content?: string;
+  types?: {
+    primary?: string;
+    secondary?: string;
+  };
 }
 
-export const myButtonClasses: MyButtonClasses = {};
+export const myButtonClasses: MyButtonClasses = { types: {} };
 
 const borderRadius = 4;
 
@@ -55,6 +59,12 @@ myButtonClasses.rootFocus = css`
     outline: none;
   }
 `;
+
+myButtonClasses.types!.primary = css`
+  background-color: #d0d0d0;
+`;
+
+myButtonClasses.types!.secondary = css``;
 
 myButtonClasses.content = css`
   flex: 1 0 auto;

@@ -9,10 +9,12 @@ interface MyButtonProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   children?: any;
   label?: string;
+  type?: 'primary' | 'secondary';
 }
 
 export function MyButton(props: MyButtonProps) {
   const classes = mergeDeep(myButtonClasses, props.classes);
+  const typeClass = props.type && classes.types![props.type];
 
   return (
     <button
@@ -22,6 +24,7 @@ export function MyButton(props: MyButtonProps) {
         ${classes.rootFocus}
         ${classes.rootDisabled}
         ${classes.rootPosition}
+        ${typeClass}
       `}
       disabled={props.disabled}
       onClick={props.onClick}

@@ -23,7 +23,9 @@ export class App extends React.Component<AppProps> {
           </div>
         </header>
         <p className={classes.intro}>
-          <MyButton classes={classes.okButton}>OK</MyButton>
+          <MyButton type="primary" classes={classes.okButton}>
+            OK
+          </MyButton>
         </p>
       </div>
     );

@@ -47,8 +47,13 @@ appClasses.intro = css`
 
 appClasses.okButton = {
   rootStyle: css`
-    background-color: #d0d0ff;
+    background-color: #a0a0ff;
   `,
+  types: {
+    primary: css`
+      background-color: #a0a0d0;
+    `
+  },
   rootPosition: css`
     margin-left: -50%;
   `
