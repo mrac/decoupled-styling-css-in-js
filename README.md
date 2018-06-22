@@ -97,4 +97,5 @@ To simplify examples, global CSS-classes are used.
 ### Customisation
 
 - Overwriting component's default styles is done "per class" (instead of "per CSS-property" like natively in CSS). In case there is need to alter just one CSS-property, it's possible to use [composition](https://emotion.sh/docs/composition) like [here for `app` component](https://github.com/mrac/decoupled-styling-css-in-js/blob/master/src/themes/theme-a.ts#L22).
-- native CSS overwriting solution by [CSS Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) is not used (unless composition is used). CSS-classes are not combined, but simply replaced if customised.
+- native CSS overwriting solution by [CSS Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) is not used. CSS-classes are not combined, but simply replaced if customised.
+- when composition is applied, Emotion will merge CSS properties from both classes
